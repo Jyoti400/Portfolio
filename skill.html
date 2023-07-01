@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            background: rgb(43, 125, 158);
+        }
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2vw 6vw;
+            background: rgb(9, 72, 97);
+            z-index: 1000;
+
+        }
+
+        .logo {
+            font-size: 3vw;
+            color: #fff;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+
+        .menuitems {
+            display: flex;
+            margin: auto;
+        }
+
+        .menuitems li {
+            list-style: none;
+            margin: 0 1.5vw;
+        }
+
+        .menuitems li a {
+            display: block;
+            color: #fff;
+            font-size: 1.5vw;
+            letter-spacing: 6.5px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .menuitems li:hover a {
+            color: #cccbd1ec;
+        }
+
+        .container1 {
+
+            background-color: #ddd;
+        }
+
+        .skill {
+            text-align: right;
+            padding-top: 120px;
+            padding-bottom: 40px;
+            color: #fff;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        .skill p {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+
+        .html {
+            width: 85%;
+            background-color: #04AA6D;
+        }
+
+        .css {
+            width: 80%;
+            background-color: #b8a70d;
+        }
+
+        .mysql {
+            width: 60%;
+            background-color: #f44336;
+        }
+
+        .python {
+            width: 65%;
+            background-color: #4e067e;
+        }
+
+        .footer-basic {
+            padding: 8px 0;
+            background-color: rgb(9, 72, 97);
+            color: #fff;
+        }
+
+        .footer-basic ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .footer-basic li {
+            padding: 0 10px;
+        }
+
+        .footer-basic ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .footer-basic ul a:hover {
+            opacity: 1;
+        }
+
+        .footer-basic .social {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        .footer-basic .social>a {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            margin: 0 8px;
+            color: inherit;
+            opacity: 0.75;
+        }
+
+        .footer-basic .social>a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-basic .copyright {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #aaa;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">PORTFOLIO</div>
+        <ol class="menuitems">
+            <li><a href="index.html">home</a></li>
+            <li><a href="skill.html">skills</a></li>
+            <li><a href="skill.html">contact me</a></li>
+
+        </ol>
+
+    </div>
+    <div class="skill">
+        <p>HTML</p>
+        <div class="container1">
+            <div class="skills html">85%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container1">
+            <div class="skills css">80%</div>
+        </div>
+
+        <p>MySql</p>
+        <div class="container1">
+            <div class="skills mysql">60%</div>
+        </div>
+
+        <p>Python</p>
+        <div class="container1">
+            <div class="skills python">65%</div>
+        </div>
+
+    </div>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-linkedin"></i></a>
+                <a href="#"><i class="icon ion-social-github"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="skill.html">Skill</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">JYOTI MISHRA © 2023</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
