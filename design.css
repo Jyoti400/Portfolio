@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Orbitron:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: rgb(43, 125, 158);
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2vw 6vw;
+    background: rgb(9, 72, 97);
+    z-index: 1000;
+
+}
+
+.logo{
+    font-size: 3vw;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.menuitems {
+    display: flex;
+    margin: auto 0;
+}
+
+.menuitems li {
+    list-style: none;
+    margin: 0 1.5vw;
+}
+
+.menuitems li a {
+    display: block;
+    color: #fff;
+    font-size: 1.5vw;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menuitems li:hover a {
+    color: #cccbd1ec;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text_container {
+    width: 50%;
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.text_container h2 {
+    font-size: 6vw;
+    font-weight: 800;
+    line-height: 9vw;
+    text-transform: capitalize;
+}
+
+.text_container h2::first-line {
+    color: #fff;
+    letter-spacing: 4px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text_container h5 {
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 10vw;
+    text-transform: capitalize;
+}
+
+.text_container p {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #f2f2f2;
+    margin-top: 30px;
+}
+
+.text_container .btn {
+    display: inline-block;
+    color: 3222;
+    background: #fff;
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 6px 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.text_container .btn:hover {
+    letter-spacing: 3px;
+    padding: 6px 18px;
+}
+
+.image_container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 8%;
+}
+
+.imgbox {
+    position: relative;
+    min-height: 60vh;
+    margin-right: 20vh;
+    margin-left: 25vh;
+    z-index: 2;
+}
+
+.imgbox img {
+    height: 50%;
+    width: 80%;
+    object-fit: cover;
+}
+
+
+.animblob {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    height: 40vw;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    animation: animate_blob 8s linear infinite;
+}
+
+@keyframes animate_blob {
+
+    0%,100% {
+        border-radius: 45% 55% 70% 35% / 70% 30% 90% 40%;
+    }
+
+    25% {
+        border-radius: 55% 45% 30% 35% / 50% 30% 60% 10%;
+    }
+
+    50% {
+        border-radius: 65% 35% 30% 65% / 40% 60% 30% 70%;
+    }
+
+    25% {
+        border-radius: 35% 65% 60% 40% / 70% 30% 40% 60%;
+    }
+}
+
+input {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.navbar lable {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow: auto;
+    }
+
+    .logo { font-size: 5vw;
+    }
+
+    .navbar label {
+        display: block;
+        color: #fff;
+        font-size: 4vw;
+        padding: 1vw 1.5vw;
+        background: #000;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .menuitems {
+        position: fixed;
+        top: 0;
+        right: -40;
+        width: 40vw;
+        height: 100%;
+        background: #000;
+        padding-top: 15vw;
+        padding-left: 5vw;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s ease;
+
+    }
+
+    .menuitems li a {
+        columns: rgb(43, 125, 158);
+        font-size: 4vw;
+        margin: 0.5vw 0;
+
+    }
+
+    #check:checked~section .navbar .menuitems {
+        right: 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+
+    }
+
+    .text_container {
+        width: 100%;
+        padding: 15vw;
+        z-index: 100;
+    }
+
+    .text_container h2 {
+        font-size: 18vw;
+        line-height: 18vw;
+
+    }
+
+    .text_container h5 {
+        font-size: 5vw;
+    }
+
+    .text_container p {
+        font-size: 3vw;
+    }
+
+    .text_container .btn {
+        margin-top: 2vw;
+        font-size: 2.5;
+    }
+
+    .image_container {
+        width: 100%;
+        height: 50rem;
+        margin-top: -100px;
+        overflow: hidden;
+
+    }
+
+    .imgbox {
+        height: 800px;
+        margin: 0;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #fff;
+        border-radius: 50px;
+    }
+}
+
+
